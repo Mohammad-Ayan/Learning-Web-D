@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <style>
+        div{
+            /* background-color: brown; */
+        }
+        /* class selector */
+        .brown{background-color: brown;}
+        /* Id selector */
+        #green{
+            background-color: green;
+        }
+        /* child selector */
+        div > p {color: rgb(122, 0, 41);
+        background-color: chocolate;}
+        /* decendent selector */
+        div p {color: rgb(122, 0, 41);
+        background-color: chocolate;}
+        /* universal selector */
+        *{margin: 4px;;
+        padding: 0%;}
+        /* pseudo selector*/
+        a:visited{
+            color: burlywood;
+        }
+        a:link{
+            color: chartreuse;
+        }
+        a:active{
+            color: cadetblue;
+        }
+        a:hover{
+            background-color: rgb(99, 128, 1);
+        }
+    </style>
+</head>
+<body>
+    <div class="brown">
+        this is div
+        <p>this is 1div </p>
+    </div>
+
+    <div id = "green">
+        this is another div
+        <p>this is inside div</p>
+    </div>
+    <a href="http://instagram.com">My Fav Social Media</a>
+    <a href="http://facebook.com">Social Media</a>
+</body>
+</html>
