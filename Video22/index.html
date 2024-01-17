@@ -1,57 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>My Simple Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS sizing unit</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid rgb(112, 30, 139);
+            /*width: 1362px;*/
+            font-style:oblique;
+            width: 80vw;
+            margin: auto;
+            background-color: rgba(102, 80, 32, 0.18);
         }
-        nav {
-            background-color: #444;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav li {
-            display: inline;
-            margin-right: 10px;
-        }
+
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
+            box-sizing: border-box;
+            border: 2px solid brown;
+            /*width: 1362px;*/
+            width: 100vw;
+            height: 80vh;
+            margin: 23px auto;
+            font-size: 16px;
+            background-color: rgba(255, 116, 16, 0.18);
+        }
+        .container p{
+            font-size: 1.5em;
+            width: 50%;
+           
+        }
+        .myCont{
+            background-color: rgb(255, 173, 72);
+            color: rgb(226, 62, 62);
+            border: 2px slategray;
+            font-size: 22px;
+            width: 100vmin;
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <h2>Welcome to My Simple Website</h2>
-        <p>This is a basic example of a simple HTML website. You can add more pages and content to build a complete site.</p>
+    <div class="box">
+        This is a box
     </div>
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quia natus, maiores sed similique temporibus
+            obcaecati officiis ducimus. Commodi nostrum, accusantium itaque praesentium, error ad aspernatur sit amet
+            exercitationem illum aliquid adipisci quaerat impedit et nemo sed modi dignissimos, ipsa maxime. Deleniti,
+            quisquam expedita odit esse unde vitae, dignissimos perferendis dolorem porro neque non tenetur aut?</p>
+
+    </div>
+
+   <div class="myCont">
+    this is another container
+   </div>
+
 </body>
+
 </html>
