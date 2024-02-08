@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Overflow</title>
+    <style>
+        .box{
+            width: 50vw;
+            height: 25vh;
+            color: rgb(177, 102, 16);
+            border: 2px solid rgba(0, 0, 0, 0.391);
+            overflow: auto;
+            overflow-x: hidden;
+            background-color: rgba(149, 220, 17, 0.485);
+            /* overflow-y: scroll; */
+            
+        }
+        .box2{
+            width: 300px;
+            height: 200px;
+            padding: 15px;
+            margin: 30px;
+            border: 100px;
+            border-radius: 35px;
+            background-color: rgb(52, 55, 157);
+            box-shadow: 20px 20px 60px
+             rgb(171, 102, 171), inset -10px -10px 60px rgba(135, 29, 29, 0.534) ;
+           
+            /* color: rgb(87, 197, 197); */
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure aperiam cupiditate 
+        autem incidunt id accusamus eveniet exercitationem laborum quis facere est, adipisci recusandae 
+        sapiente inventore accusantium totam, reprehenderit dignissimos quasi?
+    </div>
+<div class="box2">
+Lorem ipsum dolor sit amet consectetur,
+ adipisicing elit. Corrupti sunt necessitatibus rerum tempore,
+  ipsam quaerat debitis reiciendis odio obcaecati aperiam minus expedita! 
+  Culpa aliquam quas dolorem consectetur voluptatum! Soluta, excepturi?
+</div>
 </body>
 </html>
