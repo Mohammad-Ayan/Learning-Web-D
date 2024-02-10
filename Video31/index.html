@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+    <style>
+        body {
+            background-color: rgb(9, 9, 136);
+        }
+
+        @media only screen and (max-width:145px) {
+            body {
+                background-color: brown;
+            }
+        }
+
+        @media only screen and (max-width:445px) {
+            body {
+                background-color: brown;
+            }
+
+            .boxes {
+                display: flex;
+
+            }
+        }
+
+        .box {
+            height: 344px;
+            width: 344px;
+            background-color: aqua;
+            padding: 5px;
+            margin: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div>
+        This is my background
+    </div>
+</body>
+
+</html>
