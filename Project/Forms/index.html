@@ -1,20 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card_with_PNG</title>
+
+    <style>
+        *{
+ margin: 0;
+ border: 0;
+}
+        body {
+            background-image: linear-gradient(23deg, rgb(0, 145, 255), rgb(247, 71, 247));
+
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            height: 100vh;
+
+        }
+
+        .card {
+            height: 290px;
+            width: 250px;
+            background-image: linear-gradient(23deg, rgb(0, 189, 247), rgb(57, 53, 57));
+
+            padding: 5px;
+            border-radius: 13px;
+}
+.button{
+    text-align: center;
+   
+}
+.button button{
+    padding: 8px;
+    border-radius: 12px;
+    background-color: rgba(22, 80, 128, 0.848);
+}
+.heading{
+    text-align: center;
+    color: rgb(2, 6, 14);
+}
+    </style>
+
 </head>
-Contact Sales
-<br
+
 <body>
-    <div>
+    <div class="card">
+        <div class="heading">
+            Details:
+        </div>
         <label for="username1">Name:</label><br>
         <input type="text" id="username1" placeholder="First Name" required>
         <label for="username1"></label>
-        <input type="text" id="username1" placeholder="Last Name" required><br><br
-    
-        <label for="E-Mail">Email Adress:</label><br>
+        <input type="text" id="username1" placeholder="Last Name" required><br><br <label for="E-Mail">Email
+        Adress:</label><br>
         <input type="text" id="E-Mail" placeholder="Ex:-@yahoo.com" required><br><br>
 
         <label for="Industry">Your Industry</label><br>
@@ -22,18 +63,21 @@ Contact Sales
             <option value>Choose One</option>
             <option value="construction engineering">construction engineering</option>
             <option value="geotechnical engineering">geotechnical engineering</option>
-      </select><br><br>
-      <label for="Services">What services are you intrested in?</label><br>
-      <select name="Choose">
-          <option value>Choose One</option>
-          <option value=" installation">construction engineering</option>
-          <option value=" assembly work">geotechnical engineering</option>
-          <option value=" finishing work">geotechnical engineering</option>
-    </select><br><br>
-</select>
-<input type="submit" value="Submit">
+        </select><br><br>
+        <label for="Services">What services are you intrested in?</label><br>
+        <select name="Choose">
+            <option value>Choose One</option>
+            <option value=" installation">construction engineering</option>
+            <option value=" assembly work">geotechnical engineering</option>
+            <option value=" finishing work">geotechnical engineering</option>
+        </select><br><br>
+        </select>
+        <div class="button">
+            <button>Submit</button>
+        </div>
     </div>
-    
-    
+
+
 </body>
+
 </html>
