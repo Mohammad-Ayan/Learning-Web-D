@@ -1,14 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exer 7_UltraEdit Website</title>
 </head>
 <style>
-    
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .right ul {
+        display: flex;
+        gap: 34px;
+
+        /* height: 34px;
+            width: auto; */
+
+    }
+
+    .right ul li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .box img {
+        height: 54px;
+    }
+
+    .first {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 43px;
+        margin: 65px;
+        font-family: sans-serif;
+    }
+
+    .first span {
+        font-size: 45px;
+
+    }
+
+   .first span:nth-child(1)::first-word{
+    font-weight: bold;
+   }
 </style>
+
 <body>
-    
+    <header>
+        <nav>
+            <div class="box">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Products <img src="https://cdn.hugeicons.com/icons/arrow-down-01-stroke-rounded.svg" alt="">
+                    </li>
+                    <li>Pricing <img src="https://cdn.hugeicons.com/icons/arrow-down-01-stroke-rounded.svg" alt="">
+                    </li>
+                    <li>Resources <img src="https://cdn.hugeicons.com/icons/arrow-down-01-stroke-rounded.svg" alt="">
+                    </li>
+                    <li>About us <img src="https://cdn.hugeicons.com/icons/arrow-down-01-stroke-rounded.svg" alt="">
+                    </li>
+                    <li>Security and compliance </li>
+                    <li>
+                        <img src="nav_img.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <span>Download UltraEdit for Windows
+                <img src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt="">
+            </span>
+            <div>
+                Download and try UltraEdit before you buy it! This download includes the full Windows version of the
+                text
+                editor.
+            </div>
+            <div>
+                <button>DOWNLOAD MAC OR LINUX VERSION</button>
+            </div>
+
+        </section>
+    </main>
 </body>
+
 </html>
