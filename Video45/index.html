@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Transition</title>
+    <style>
+        .container{
+            background-color: rgba(153, 10, 10, 0.657);
+            width: 50vw;
+            height: 40vh;
+        }
+        .box{
+            background-color: rgba(121, 221, 20, 0.623);
+            width: 5vw;
+            height: 4vh;
+            /* transition-property: background-color, transform;
+            transition-duration: 3s ;
+            transition-timing-function: ease-in-out ;
+            transition-delay: 1s ; */
+            transition: all 3s ease-in-out 2s;
+        }
+        .translate{
+            transform: translateX(10vh) translateY(10vw);
+            background-color: blue;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
 </body>
 </html>
