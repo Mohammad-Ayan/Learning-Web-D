@@ -1,0 +1,402 @@
+.inherited-css {
+	color: #212529;
+	font-family: Poppins, sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: left;
+}
+body {
+	background: #eeeeee;
+}
+* {
+	box-sizing: border-box;
+}
+nav {
+	display: block;
+}
+a {
+	color: #007bff;
+	text-decoration: none;
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects;
+}
+a:hover {
+	color: #0056b3;
+	text-decoration: underline;
+}
+a:not([href]):not([tabindex]) {
+	color: inherit;
+	text-decoration: none;
+}
+a:not([href]):not([tabindex]):focus,
+a:not([href]):not([tabindex]):hover {
+	color: inherit;
+	text-decoration: none;
+}
+a:not([href]):not([tabindex]):focus {
+	outline: 0;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+.form-inline {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+.btn {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	user-select: none;
+	border: 1px solid transparent;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: 0.25rem;
+	transition:
+		color 0.15s ease-in-out,
+		background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out,
+		box-shadow 0.15s ease-in-out;
+}
+.btn:focus,
+.btn:hover {
+	text-decoration: none;
+}
+.btn:focus {
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.btn:disabled {
+	opacity: 0.65;
+}
+.btn:not(:disabled):not(.disabled) {
+	cursor: pointer;
+}
+.btn:not(:disabled):not(.disabled):active {
+	background-image: none;
+}
+.navbar {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem 1rem;
+}
+.navbar-brand {
+	display: inline-block;
+	padding-top: 0.3125rem;
+	padding-bottom: 0.3125rem;
+	margin-right: 1rem;
+	font-size: 1.25rem;
+	line-height: inherit;
+	white-space: nowrap;
+}
+.navbar-brand:focus,
+.navbar-brand:hover {
+	text-decoration: none;
+}
+.navbar-light .navbar-brand {
+	color: rgba(0, 0, 0, 0.9);
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+	color: rgba(0, 0, 0, 0.9);
+}
+.bg-white {
+	background-color: #fff !important;
+}
+.mw-100 {
+	max-width: 100% !important;
+}
+@media (max-width: 576px) {
+	.navbar-brand {
+		margin: 0 !important;
+	}
+}
+@charset "UTF-8";
+@font-face {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 300;
+	src:
+		local("Poppins Light"),
+		local("Poppins-Light"),
+		url(https://rawmaterialsindia.in/public/front/fonts/pxiByp8kv8JHgFVrLDz8Z11lFc-K.woff2) format("woff2");
+	unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+@font-face {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 300;
+	src:
+		local("Poppins Light"),
+		local("Poppins-Light"),
+		url(https://rawmaterialsindia.in/public/front/fonts/pxiByp8kv8JHgFVrLDz8Z1JlFc-K.woff2) format("woff2");
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 300;
+	src:
+		local("Poppins Light"),
+		local("Poppins-Light"),
+		url(https://rawmaterialsindia.in/public/front/fonts/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2) format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local("Poppins Regular"),
+		local("Poppins-Regular"),
+		url(https://rawmaterialsindia.in/public/front/fonts/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format("woff2");
+	unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+@font-face {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local("Poppins Regular"),
+		local("Poppins-Regular"),
+		url(https://rawmaterialsindia.in/public/front/fonts/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format("woff2");
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local("Poppins Regular"),
+		local("Poppins-Regular"),
+		url(https://rawmaterialsindia.in/public/front/fonts/pxiEyp8kv8JHgFVrJJfecg.woff2) format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	src:
+		local("Poppins Medium"),
+		local("Poppins-Medium"),
+		url(https://rawmaterialsindia.in/public/front/fonts/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2) format("woff2");
+	unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+@font-face {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	src:
+		local("Poppins Medium"),
+		local("Poppins-Medium"),
+		url(https://rawmaterialsindia.in/public/front/fonts/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2) format("woff2");
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	src:
+		local("Poppins Medium"),
+		local("Poppins-Medium"),
+		url(https://rawmaterialsindia.in/public/front/fonts/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	src:
+		local("Poppins SemiBold"),
+		local("Poppins-SemiBold"),
+		url(https://rawmaterialsindia.in/public/front/fonts/pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2) format("woff2");
+	unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+@font-face {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	src:
+		local("Poppins SemiBold"),
+		local("Poppins-SemiBold"),
+		url(https://rawmaterialsindia.in/public/front/fonts/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2) format("woff2");
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	src:
+		local("Poppins SemiBold"),
+		local("Poppins-SemiBold"),
+		url(https://rawmaterialsindia.in/public/front/fonts/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local("Poppins Bold"),
+		local("Poppins-Bold"),
+		url(https://rawmaterialsindia.in/public/front/fonts/pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2) format("woff2");
+	unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+@font-face {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local("Poppins Bold"),
+		local("Poppins-Bold"),
+		url(https://rawmaterialsindia.in/public/front/fonts/pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2) format("woff2");
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local("Poppins Bold"),
+		local("Poppins-Bold"),
+		url(https://rawmaterialsindia.in/public/front/fonts/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 800;
+	src:
+		local("Poppins ExtraBold"),
+		local("Poppins-ExtraBold"),
+		url(https://rawmaterialsindia.in/public/front/fonts/pxiByp8kv8JHgFVrLDD4Z11lFc-K.woff2) format("woff2");
+	unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+@font-face {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 800;
+	src:
+		local("Poppins ExtraBold"),
+		local("Poppins-ExtraBold"),
+		url(https://rawmaterialsindia.in/public/front/fonts/pxiByp8kv8JHgFVrLDD4Z1JlFc-K.woff2) format("woff2");
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 800;
+	src:
+		local("Poppins ExtraBold"),
+		local("Poppins-ExtraBold"),
+		url(https://rawmaterialsindia.in/public/front/fonts/pxiByp8kv8JHgFVrLDD4Z1xlFQ.woff2) format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 900;
+	src:
+		local("Poppins Black"),
+		local("Poppins-Black"),
+		url(https://rawmaterialsindia.in/public/front/fonts/pxiByp8kv8JHgFVrLBT5Z11lFc-K.woff2) format("woff2");
+	unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+@font-face {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 900;
+	src:
+		local("Poppins Black"),
+		local("Poppins-Black"),
+		url(https://rawmaterialsindia.in/public/front/fonts/pxiByp8kv8JHgFVrLBT5Z1JlFc-K.woff2) format("woff2");
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 900;
+	src:
+		local("Poppins Black"),
+		local("Poppins-Black"),
+		url(https://rawmaterialsindia.in/public/front/fonts/pxiByp8kv8JHgFVrLBT5Z1xlFQ.woff2) format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+a {
+	font-family: Poppins, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+a,
+a:focus,
+a:hover {
+	text-decoration: none;
+}
+a:focus,
+a:hover {
+	color: inherit;
+	opacity: 0.9;
+}
+.clr-themecolor {
+	color: #1a237e;
+}
+.bg-white {
+	background-color: #fff;
+}
+.btn:focus {
+	box-shadow: none !important;
+}
+.btn {
+	border-radius: 20px;
+	min-width: 100px;
+	text-align: center;
+	margin-left: 5px;
+	font-size: 1em;
+}
+.navbar {
+	padding-left: 0;
+	padding-right: 0;
+}
+.logo-white .img-1 {
+	display: block;
+}
+.logo-white .img-2 {
+	display: none;
+}
+@-moz-document url-prefix() {
+}
+@font-face {
+	font-family: untitled-font-1;
+	src: url(https://rawmaterialsindia.in/public/front/fonts/untitled-font-1.eot);
+	src:
+		url(https://rawmaterialsindia.in/public/front/fonts/untitled-font-1.eot?#iefix) format("embedded-opentype"),
+		url(https://rawmaterialsindia.in/public/front/fonts/untitled-font-1.woff) format("woff"),
+		url(https://rawmaterialsindia.in/public/front/fonts/untitled-font-1.ttf) format("truetype"),
+		url(https://rawmaterialsindia.in/public/front/fonts/untitled-font-1.svg#untitled-font-1) format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+@media (max-width: 767px) {
+	.btn {
+		min-width: auto;
+	}
+	.navbar-brand {
+		margin-right: 0;
+	}
+	.navbar-brand {
+		text-align: center;
+		display: block;
+		width: 100%;
+	}
+}
+html {
+	font-size: 16px;
+}
