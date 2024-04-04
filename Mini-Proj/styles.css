@@ -3,6 +3,25 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.main{
+    background-image: url("Assets/main-bg.jpeg");
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: max(1200px, 100vw);
+    position: relative;
+
+}
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.78;
+    position: absolute;
+    top: 0;
+    /* background-color: black; */
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgb(128, 53, 87), rgb(221, 120, 125), rgb(244, 107, 168), rgba(33, 13, 22, 1) 84%);
+}
+
 .header1 {
     background-color: #101bb3;
     color: #fff;
@@ -11,32 +30,96 @@ body {
     font-size: 7px;
 }
 
-.header1 ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.header2 {
-    background-color: #f4f4f4;
-    padding: 10px 0;
-
-
-}
-
-
 .header01 ul {
     list-style-type: none;
     text-align: center;
     margin: 0;
     padding: 0;
     color: white;
+}
+
+.header1 ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    
+    /* background-color: transparent; */
+    /* position: fixed; */
+    
+
+    /* grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    background-color: transparent;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    transition: var(--main-transition);
+    justify-content: center;
+    align-items: center; */
+
+}
+
+.header1 h1 {
+    margin: 0;
+    /* Remove default margin */
+}
+
+.header01 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header01 ul li {
+    display: inline;
+    margin-right: 20px;
+
+    color: #FFFFFF;
+    cursor: pointer;
+
+    font-family: Poppins, sans-serif;
+    font-size: 15.12px;
+
+    list-style-type: none;
+    margin: 0px -10px;
+
+    padding: 5px 30px;
+    text-align: left;
+    transition-duration: 0.1s;
+}
+
+.header1 ul li img {
+    margin-right: 10px;
+    /* Adjust as needed */
+}
+
+
+.header01 ul li:last-child {
+    margin-right: 0;
+    /* Remove margin from the last li */
+}
+
+
+.header2 {
+    /* background-color: #f4f4f4; */
+    padding: 10px 0;
+
 
 }
 
 .header2 nav {
     border-radius: 20px;
 }
-
+.header2 btn{
+    padding: 20px;
+    gap: 10px;
+}
 main {
     padding: 20px;
     text-align: center;
@@ -65,4 +148,30 @@ nav span {
     opacity: 0.9;
     padding: 5px 30px;
     transition-duration: 0.1s;
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 15px;
+    padding: 0 30px;
+
+}
+
+.hero> :nth-child(1) {
+    font-weight: 900;
+    font-size: 50px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
 }
