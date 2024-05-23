@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scrollable List Selection</title>
+<style>
+    /* Styling for scrollable lists */
+    .scrollable-list {
+        width: 200px;
+        height: 200px;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+    }
+    /* Styling for selected items */
+    .selected-item {
+        background-color: lightblue;
+    }
+</style>
+</head>
+<body>
+
+<h2>Scrollable List Selection</h2>
+
+<!-- Scrollable List 1 -->
+<select id="list1" class="scrollable-list" multiple>
+    <option value="item1">Item 1 (Sub-Item 1)</option>
+    <option value="item1">Item 1 (Sub-Item 2)</option>
+    <option value="item1">Item 1 (Sub-Item 3)</option>
+    <option value="item2">Item 2</option>
+    <option value="item3">Item 3</option>
+    <option value="item4">Item 4</option>
+    <option value="item5">Item 5</option>
+</select>
+
+<!-- Scrollable List 2 (Selected Items with Sub-Items) -->
+<select id="list2" class="scrollable-list" multiple>
+    <!-- Selected items with sub-items will be displayed here -->
+</select>
+
+<script>
+    // Function to display sub-items of selected item in list2
+    function displaySubItems() {
+        var list1 = document.getElementById('list1');
+        var list2 = document.getElementById('list2');
+        list2.innerHTML = ''; // Clear list2
+
+        // Loop through each selected option in list1
+        for (var i = 0; i < list1.options.length; i++) {
+            var option = list1.options[i];
+            if (option.selected) {
+                // Clone the selected option and append to list2
+                var clonedOption = option.cloneNode(true);
+                list2.appendChild(clonedOption);
+                clonedOption.className = 'selected-item';
+            }
+        }
+    }
+
+    // Add event listener to display sub-items when selection changes in list1
+    document.getElementById('list1').addEventListener('change', displaySubItems);
+</script>
+
+</body>
+</html>

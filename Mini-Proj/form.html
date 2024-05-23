@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scroll Down Box</title>
+<style>
+    .box {
+        width: 300px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .scroll-down {
+        margin-bottom: 10px;
+    }
+
+    .hidden {
+        display: none;
+    }
+</style>
+</head>
+<body>
+<div class="box">
+    <select id="scroll1" class="scroll-down">
+        <option value="" disabled selected>Select Option 1</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+    </select>
+    <select id="scroll2" class="scroll-down">
+        <option value="" disabled selected>Select Option 2</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+    </select>
+    <button id="setLocationBtn" class="hidden">Set Location</button>
+    <button id="searchBtn" class="hidden">Search</button>
+</div>
+
+<script>
+    document.getElementById('scroll1').addEventListener('change', function() {
+        if (this.value !== '') {
+            document.getElementById('scroll2').removeAttribute('disabled');
+        } else {
+            document.getElementById('scroll2').setAttribute('disabled', 'disabled');
+        }
+    });
+
+    document.getElementById('scroll2').addEventListener('change', function() {
+        if (this.value !== '') {
+            document.getElementById('setLocationBtn').classList.remove('hidden');
+        } else {
+            document.getElementById('setLocationBtn').classList.add('hidden');
+        }
+    });
+
+    document.getElementById('setLocationBtn').addEventListener('click', function() {
+        // Perform location setting functionality
+        alert('Location set successfully!');
+        document.getElementById('searchBtn').classList.remove('hidden');
+    });
+
+    document.getElementById('searchBtn').addEventListener('click', function() {
+        // Perform search functionality
+        alert('Searching...');
+    });
+</script>
+</body>
+</html>
