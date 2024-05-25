@@ -1,1 +1,1 @@
-console.log(arr.push(100))
+  let newArr = []
