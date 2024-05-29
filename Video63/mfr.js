@@ -14,15 +14,27 @@
     return ele**2
  })
 
-// console.log(newArr)
+console.log(newArr)
 
-//-------------------------------------filter-------------------------------
+//-------------------------------------filter--------------------------------
 //  filters an array with values that passes a test, Creates a new array
 
 const greaterThanSeven = (ele) =>{
-    if(ele>7){
+    if(ele>27){
         return true
     }
     return false
 }
-console.log(new Arr.filter(greaterThanSeven))
+console.log(newArr.filter(greaterThanSeven))
+
+//-------------------------------reduce--------------------------------
+ // reduce an array to single ans(after + - * /)
+
+let arr2 = [2,4,6,8]
+
+const red = (a, b)=>{
+    return a*b
+}
+
+console.log(arr2.reduce(red))
+
