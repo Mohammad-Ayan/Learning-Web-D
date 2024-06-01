@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events And Properties(DOM)</title>
+</head>
+<body>
+    <div class="container"></div>
+    <div class="box">hey I'm a box</div>
+    <script>
+        // let div1 = document.createElement("div");
+        // div1.innerHTML = "I have been inserted by: <b>Ayan</b>  //before"
+        // document.querySelector(".container").before(div1);
+
+        // let div2 = document.createElement("div");
+        // div2.innerHTML = "I have been inserted by: <b>Nida</b> //append"
+        // document.querySelector(".container").append(div2);
+
+        // let div3 = document.createElement("div");
+        // div3.innerHTML = "I have been inserted by: <b>me</b>  //prepend"
+        // document.querySelector(".container").prepend(div3);
+
+        // let div4 = document.createElement("div");
+        // div4.innerHTML = "I have been inserted by: <b>Haram</b>  //after"
+        // document.querySelector(".container").after(div4);
+
+        let cont = document.querySelector(".container")
+        cont.insertAdjacentHTML("afterbegin", "1)<b> I am under the sun and its too hot today...off🥹 </b>   ..//afterbegin")
+
+        // let cont2 = document.querySelector(".container")
+        cont.insertAdjacentHTML("afterend", "2)<b> I am under the sun 🥹</b>   ..//afterend")
+
+        // let cont3 = document.querySelector(".container")
+        cont.insertAdjacentHTML("beforebegin", "3)<b>its too hot today...off🥹</b>   ..//beforebegin")
+
+        // let cont4 = document.querySelector(".container")
+        cont.insertAdjacentHTML("beforeend", "4)<b>euuuoo🥵 ..off🥹</b>   ..//beforeend")
+    </script>
+</body>
+</html>
