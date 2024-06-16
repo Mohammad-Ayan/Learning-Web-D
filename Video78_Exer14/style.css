@@ -1,0 +1,16 @@
+body{
+    background-color: #022408; 
+}
+
+.text{
+    text-align: center;
+    color: #c91e3a; /* Reddish text color */
+    font-family: monospace;
+    padding: 50px ;
+}
+.hacking {
+    margin-top: 15px; /* Add some space between messages */
+    animation: hackText 2s infinite alternate; /* Animation for blinking text */
+    padding: 20px 0 0 0;
+    font-size: 17px;
+  }
