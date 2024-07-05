@@ -1,7 +1,18 @@
-const hackingElements = document.querySelectorAll('.hacking');
-
-function blinkText() {
-  hackingElements.forEach(element => element.classList.toggle('blink'));
+const addItem = async (item)=>{
+  
 }
 
-setInterval(blinkText, 500);
+const randomDelay = () => {
+  return new Promise((resolve, reject) => {
+    timeout = 1 + 6 * Math.random()
+    setTimeout(() => {
+      resolve()
+    }, timeout * 2000);
+  })
+}
+
+let text = ["Initializing Hacking",
+  "Reading your Files",
+  "Password files Detected",
+  "Sending all passwords and Personal files to server",
+  "Cleaning up"]
