@@ -75,7 +75,7 @@
 //----------Print Avg
 // function clcAvg (a, b, c, d){
 //     console.log(a + b + c + d/4);
-    
+
 // }
 
 // clcAvg(2,4,6,8)
@@ -84,7 +84,7 @@
 // function printTable(n){
 //     for(let i= n; i<= n*10; i++){
 //         console.log(n);
-        
+
 //     }
 // }
 
@@ -102,21 +102,73 @@
 // calSum(1, 2);
 // console.log(sum);
 
- // -----------------Block_Scope
+// -----------------Block_Scope
 //  for (let i = 1; i<=5; i++){
 //     console.log(i); // access within the block
-    
+
 //  }
 
 //  console.log(i);  // can't be accessed due to out of block
 
 //------------------Lexical_Scope
-function outerFunc(){
-    let x = 5;
-    let y = 6;
-    function innerFucn(){
-        console.log(x);
-        
-    }
-}
-outerFunc();
+// function outerFunc() {
+//     let x = 5;
+//     let y = 6;
+//     function innerFunc() {
+//         console.log(x);
+//     }
+//     innerFunc();
+// }
+
+//--Q7
+
+// let greet = "hello"; //global scope
+
+// function changeGreet() { // function scope
+//     let greet = "Assalamualikum";
+//     console.log(greet);
+
+//     function innerGreet() {
+//         console.log(greet);  //lexical scope
+
+//     }
+//     innerGreet();
+// }
+
+
+// console.log(greet);
+
+// changeGreet();
+
+//--------------Function Expression
+// let name = "Ayan"
+
+// let sum = function (a, b) {
+//     return a + b;
+// }
+
+// let hello = function () {
+//     console.log("hello");
+
+// }
+
+// hello = function () {
+//     console.log("Assalamualikum");
+
+// }
+
+//-----------------Higher Order Functions
+
+// function multipleGreet(func, count){ //higher order functions
+//     for (i=1; i<=n; i++){
+//         func();
+//     }
+// }
+
+// let greet = function(){
+//     console.log("Assalmualikum");
+    
+// }
+
+// multipleGreet(greet, 4);
+
