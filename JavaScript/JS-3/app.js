@@ -38,9 +38,9 @@ const sum = (a, b) => {
     console.log(a + b);
 };
 
-const cube = (n) => {
+//const cube = (n) => {
     return (n * n * n);
-};
+//};
 
 const pow = (a, b) => {
     return a ** b;
@@ -74,10 +74,10 @@ setInterval(() => {
 console.log('Assalamualikum');
 }, 4000);
 
-let id = setInterval(() => {
-    console.log('Assalamualikum');
-    }, 3000);
-    console.log(id);
+let ide = setInterval(() => {
+   console.log('Assalamualikum');
+   }, 3000);
+    console.log(ide);
 
 
 let id2 = setInterval(() => {
@@ -89,7 +89,7 @@ let id2 = setInterval(() => {
 
 //-------------this with Arrrow Function 
 
-const student = {
+const friend = {
     name: "ayan",
     marks: 95,
     prop: this,  //global scope
