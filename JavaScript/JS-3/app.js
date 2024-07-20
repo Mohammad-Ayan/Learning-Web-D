@@ -14,7 +14,7 @@ const student = {
 }
 
 function getAvg() {
-    console.log(this);    // window object(browser window)
+    console.log(this);  // window object(browser window)
 }
 
 //---------------Try & Catch
