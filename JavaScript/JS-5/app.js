@@ -101,15 +101,16 @@ btn.classList.add("btnStyle")
 // Qs4. Create an hl element on the page and set its text to "DOM Practice" underlined. 
 // Change its color to purple.
 
-// let h1 = document.createElement("h1");
-// h1.innerHTML = "<u>DOM Practice</u>"
+let h1 = document.createElement("h1");
+h1.innerHTML = "<u>DOM Practice</u>"
 
-// document.querySelector("body").append(h1);
+document.querySelector("body").append(h1);
     
 // Qs5. Create a p tag on the page and set its text to "Apna College Delta Practice",
 // where Delta is bold.
 
-// let p = createElement("p");
-// p.innerText = "Apna College <b>Delta</b> Practice"
+let p = createElement("p");
+p.innerText = "Apna College <b>Delta</b> Practice"
 
-// document.querySelector("body").append(p);
+document.querySelector("body").append(p);
+
