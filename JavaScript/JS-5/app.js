@@ -102,7 +102,7 @@ btn.classList.add("btnStyle")
 // Change its color to purple.
 
 let h1 = document.createElement("h1");
-h1.innerHTML = "<u>DOM Practice</u>"
+h1.innerHTML = "<u>DOM Practice</u>";
 
 document.querySelector("body").append(h1);
     
