@@ -30,3 +30,6 @@ function sayHello() {
 function sayGreet() {
     alert("Assalamualikum")
 }
+
+
+
