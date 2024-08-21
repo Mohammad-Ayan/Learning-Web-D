@@ -124,7 +124,7 @@
 
 // form.addEventListener("submit", function (event) {
 //     event.preventDefault();
- 
+
 //     let user = document.querySelector("#user")
 //     let pass = document.querySelector("#pass")
 
@@ -137,10 +137,24 @@ let form = document.querySelector("form")
 
 form.addEventListener("submit", function (event) {
     event.preventDefault();
- 
-    let user = this.elements[0]  // form.element[0]
-    let pass = this.elements[1]
 
-    console.log("username:" + user.value); 
-    console.log("password:" + pass.value); 
-});
+    //     let user = this.elements[0]  // form.element[0]
+    //     let pass = this.elements[1]
+
+    //     console.log("username:" + user.value); 
+    //     console.log("password:" + pass.value); 
+})
+
+//---------- change event & input event--------
+let user = document.querySelector("#user");
+
+user.addEventListener("change", function () {
+    console.log("changed event");
+    console.log("final value:" + this.value);
+})
+
+
+user.addEventListener("input", function () {
+    console.log("input event");
+    console.log("final value:" + this.value);
+})
