@@ -75,7 +75,7 @@
 
 //-------KeyBoard Events---------
 
-let inp = document.querySelector("input");
+// let inp = document.querySelector("input");
 
 // inp.addEventListener("keydown", function () {
 //     console.log("Key was clicked");
@@ -85,9 +85,62 @@ let inp = document.querySelector("input");
 //     console.log("Key was released");
 // });
 
-inp.addEventListener("keydown", function (event) {
-    console.log(event.key);
-    console.log(event.code);
+//  //-------key and code of keyboard event---------
+// inp.addEventListener("keydown", function (event) {
+//     console.log(event.key);
+//     console.log(event.code);
 
-    console.log("Key was clicked");
-});
+//     console.log("Key was clicked");
+// });
+
+
+// //-------------Game Keyboard trigger Event-----------------
+// inp.addEventListener("keydown", function (event) {
+//     console.log(event.code);  // ArrowUp, ArrowDown, ArrowRight, ArrowLeft
+
+//     if (event.code == "ArrowUp") {
+//         console.log("Man moves Forward");
+//     }
+//     else if (event.code == "ArrowDown") {
+//         console.log("Man moves Backward");
+//     }
+//     else if (event.code == "ArrowRight") {
+//         console.log("Man moves towards Right");
+//     }
+//     else if (event.code == "ArrowLeft") {
+//         console.log("Man moves towards Left");
+//     }
+// });
+
+// //----------------Form Event-----------------
+// let form = document.querySelector("form")
+
+// form.addEventListener("submit", function () {
+//     console.log("Form Submitted");
+// })
+//// ========-----Extracting form Data-------
+
+// let form = document.querySelector("form")
+
+// form.addEventListener("submit", function (event) {
+//     event.preventDefault();
+ 
+//     let user = document.querySelector("#user")
+//     let pass = document.querySelector("#pass")
+
+//     console.log("username:" + user.value); 
+//     console.log("password:" + pass.value); 
+// })
+// ---------------better approach (frequently used)
+
+let form = document.querySelector("form")
+
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+ 
+    let user = this.elements[0]  // form.element[0]
+    let pass = this.elements[1]
+
+    console.log("username:" + user.value); 
+    console.log("password:" + pass.value); 
+})
