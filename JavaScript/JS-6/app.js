@@ -143,4 +143,4 @@ form.addEventListener("submit", function (event) {
 
     console.log("username:" + user.value); 
     console.log("password:" + pass.value); 
-})
+});
