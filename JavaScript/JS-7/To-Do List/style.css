@@ -1,0 +1,115 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f2f5; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Centering the Todo App */
+.todo-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    width: 350px;
+    text-align: center;
+}
+
+/* Styling the Input and Button */
+input {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #00aaff;
+    box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+}
+
+button {
+    padding: 10px 9px;
+    font-size: 1rem;
+    color: white;
+    background-color: #00aaff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0088cc;
+}
+
+/* Styling the Task List */
+ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+/* Delete Button */
+.delete {
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete:hover {
+    background-color: #e60000;
+}
+
+/* Mobile Responsive */
+@media (max-width: 400px) {
+    .todo-container {
+        width: 90%;
+    }
+
+    input {
+        width: 65%;
+    }
+}

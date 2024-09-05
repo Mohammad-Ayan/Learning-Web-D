@@ -10,15 +10,27 @@ btn.addEventListener("click", function () {
     delBtn.innerText = "delete"
     delBtn.classList.add("delete");
 
+    // Append the delete button to the newly created list item
     item.appendChild(delBtn)
+    // Append the new list item (with delete button) to the ul element
     ul.appendChild(item)
+    // Clear the input field after the item is added
     inp.value = "";
 })
 
-let delBtns = document.querySelectorAll(".delete");
-for (delBtn of delBtns) {
-    delBtn.addEventListener("click", function () {
-        let par = this.parentElement;
-        par.remove();
-    })
-}
+// for deleting the task
+// let delBtns = document.querySelectorAll(".delete");
+// for (delBtn of delBtns) {
+//     delBtn.addEventListener("click", function () {
+//         let par = this.parentElement;
+//         par.remove();  // Remove the parent element
+//     })
+// }
+
+ul.addEventListener("click", function (event) {
+    if (event.target.nodeName == "BUTTON") {
+        let listItem = event.target.parentElement;
+        listItem.remove();
+        console.log("remove");
+    }
+})
