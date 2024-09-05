@@ -1,3 +1,4 @@
+//-----------------------Event Bubbling---------------------
 let div = document.querySelector("div");
 let ul = document.querySelector("ul");
 let lis = document.querySelectorAll("li");
@@ -17,3 +18,5 @@ for (li of lis) {
         console.log("li was clicked");
     })
 }
+
+//--------------------Event Delegation-----------------------
