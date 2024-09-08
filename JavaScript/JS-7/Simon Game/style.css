@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+}
+
+.btn {
+    height: 180px;
+    width: 180px;
+    border: 10px solid black;
+    border-radius: 15px;
+    margin: 2rem;
+    cursor:pointer;
+}
+.btn:hover{
+    height: 182px;
+    width: 182px;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.red{
+background-color: rgba(237, 16, 16, 0.831);
+}
+
+.yellow{
+background-color: rgba(248, 248, 18, 0.816);
+}
+
+.blue{
+background-color: rgba(31, 31, 251, 0.733);
+}
+
+.green{
+background-color: rgba(28, 248, 28, 0.752);
+}
+
+.flash{
+    background-color: white;
+}
