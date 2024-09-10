@@ -53,6 +53,10 @@ function checkAns(idx) {
         }
     } else {
         h2.innerHTML = `Game Over! Your Score was <b>${level}</b> Press any key to Start.`;
+        document.querySelector("body").style.backgroundColor = "red";
+        setTimeout(function () {
+            document.querySelector("body").style.backgroundColor = "white";
+        }, 170);
         reset();
     }
 }
@@ -64,7 +68,7 @@ function btnPress() {
     userColor = btn.getAttribute("id");
     userSeq.push(userColor);
 
-    checkAns(userSeq.length-1);
+    checkAns(userSeq.length - 1);
 }
 
 let allBtns = document.querySelectorAll(".btn");
