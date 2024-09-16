@@ -3,19 +3,19 @@ let userSeq = [];
 
 let btns = ["yellow", "red", "green", "blue"]
 
-let started = false;
+let started = false;    //game start(No)
 let level = 0;
 
 let h2 = document.querySelector("h2");
 
 document.addEventListener("keypress", function () {
-    if (started == false) {
+    if (started == false) {             // game will start 1 time
         console.log("Game Started");
         started = true;
 
         levelup();
     }
-})
+});
 
 function gameFlash(btn) {
     btn.classList.add("flash")
@@ -28,11 +28,11 @@ function userFlash(btn) {
     btn.classList.add("userflash")
     setTimeout(function () {
         btn.classList.remove("userflash");
-    }, 500);
+    }, 600);
 }
 
 function levelup() {
-    userSeq = [];
+    userSeq = [];     //reset
     level++;
     h2.innerText = `Level ${level}`;
 
@@ -71,12 +71,12 @@ function btnPress() {
     checkAns(userSeq.length - 1);
 }
 
-let allBtns = document.querySelectorAll(".btn");
+let allBtns = document.querySelectorAll(".btn");    // when button is pressed    
 for (btn of allBtns) {
     btn.addEventListener("click", btnPress);
 }
 
-function reset() {
+function reset() {         // reset to new game
     started = false;
     gameSeq = [];
     userSeq = [];

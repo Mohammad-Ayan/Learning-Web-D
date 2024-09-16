@@ -20,3 +20,5 @@ for (li of lis) {
 }
 
 //--------------------Event Delegation-----------------------
+
+// used using Event Bubbling i.e if Child is triggered the parent is also triggered..
