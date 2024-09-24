@@ -1,0 +1,10 @@
+body {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+}
+
+h2{
+  top: 50%;
+  
+}
