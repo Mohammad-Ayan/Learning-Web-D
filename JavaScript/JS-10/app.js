@@ -17,7 +17,7 @@ async function getFacts() {
 
     } catch (err) {
         console.log("error", err);
-        return "No Fact Found"; 
+        return "No Fact Found";
     }
 }
 
@@ -27,9 +27,9 @@ let url1 = "https://dog.ceo/api/breeds/image/random"
 let btn2 = document.querySelector("button");
 
 btn.addEventListener("click", async () => {
-    let link =  await getImage();
-let img = document.querySelector("#result");
-img.setAttribute("src", link);
+    let link = await getImage();
+    let img = document.querySelector("#result");
+    img.setAttribute("src", link);
 });
 
 
@@ -40,6 +40,22 @@ async function getImage() {
 
     } catch (err) {
         console.log("error", err);
-        return "No Image Found"; 
+        return "No Image Found";
     }
 }
+
+//------------API request using Headers--------------
+
+const url2 = "https://icanhazdadjoke.com/";
+
+async function getJokes() {
+    try {
+        const config = { headers: { Accept: "application/json" } };
+        let res = await axios.get(url2, config)
+        console.log(res.data);
+    } catch (err) {
+        console.log(err);
+    }
+}
+
+
