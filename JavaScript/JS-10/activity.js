@@ -80,6 +80,7 @@ let btn = document.querySelector("button");
 
 btn.addEventListener("click", async () => {
     let state = document.querySelector("input").value;
+    console.log(state);
 
     let colArr = await getColleges(state);
     show(colArr);
@@ -97,18 +98,47 @@ function show(colArr) {
 
 async function getColleges(state) {
     try {
-        let res = await axios.get(url2 + state);  // Fetch data using the input state
-        let universities = res.data;
+        let result = await axios.get(url2 + state);
+        return result.data;
 
-        // Filter universities that have a matching state_province (case insensitive)
-        universities = universities.filter(university =>
-            university.state_province && university.state_province.toLowerCase() === state.toLowerCase()
-        );
-
-        return universities;
-
-    } catch (e) {
-        console.log("error:", e);
+    } catch (error) {
+        console.log(error);
         return [];
     }
 }
+
+
+
+
+// let url = "http://universities.hipolabs.com/search?name=";
+// let btn = document.querySelector("button");
+// btn.addEventListener("click", async () => {
+//     let state = document.querySelector("input").value;
+//     console.log(state);
+
+//     let colArr = await getColleges(state);
+
+//     show(colArr);
+
+// })
+// function show(colArr) {
+//     let list = document.querySelector("#list");
+//     list.innerText = "";
+//     for (let col of colArr) {
+//         console.log(col.name);
+//         let li = document.createElement("li");
+//         li.innerText = col.name;
+//         list.appendChild(li);
+//     }
+
+// }
+// async function getColleges(state) {
+//     try {
+//         let result = await axios.get(url + state);
+//         return result.data;
+
+//     } catch (error) {
+//         console.log(error);
+//         return [];
+//     }
+// }
