@@ -1,13 +1,15 @@
-// // let n = 5;
+//-----------------Expoting in Files----------------
 
-// // for(let i = 0; i < n; i++){
-// //     console.log("hello", i); 
-// // } 
+// const math = require("./math");   
 
-// console.log(process.argv);
+// console.log(math);
+// console.log(math.sum(2,3));
+// console.log(math.PI);
 
-const math = require("./math");   
+//--------------requiring(Exporting) in Directories---------------
 
-console.log(math);
-console.log(math.sum(2,3));
-console.log(math.PI);
+const info = require("./Fruits");    
+
+console.log(info);
+
+// require will search only index.js(perform all the in it) and fetch it 
