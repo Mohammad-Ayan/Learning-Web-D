@@ -2,7 +2,7 @@ import "./Product.css";
 
 function Product({ title, price, features }) {
     let isDiscount = price > 30000;
-    let styles = {backgroundColor : isDiscount ? "pink" : ""}
+    let styles = {backgroundColor : isDiscount ? "#A04747" : ""}
    
     return (
         <div className="Product" style={styles}>

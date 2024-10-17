@@ -1,19 +1,17 @@
 import "./App.css"
 import Title from "./Title.jsx";
 import ProductTab from "./ProductTab.jsx";
+import MsgBox from "./MsgBox.jsx";
+import MsgBox2 from "./MsgBox2.jsx"
 
-
-
-function Description() {
-  return <h3>I'm the Description</h3>
-}
 
 function App() {
   return (
     <>
+      <MsgBox userName="" textColor="purple"/>
+      <MsgBox2 userName="Mohd Ayan" textColor="#C62E2E"/>
       <ProductTab />
-      {/* <ProductTab />
-      <ProductTab /> */}
+
     </>
   );
 }
