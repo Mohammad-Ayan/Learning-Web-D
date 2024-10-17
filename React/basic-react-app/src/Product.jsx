@@ -1,12 +1,16 @@
 import "./Product.css";
 
-function Product(){
-    return(
-        <div className = "Product">
-            <h3>Product Title</h3>
-            <h4>Product Describtion</h4>
+function Product({ title, price, features }) {
+    let isDiscount = price > 30000;
+    let styles = {backgroundColor : isDiscount ? "pink" : ""}
+   
+    return (
+        <div className="Product" style={styles}>
+            <h3>{title}</h3>
+            <h4>Price: {price}</h4>
+            {isDiscount && <p>"Discount of 5%"</p>}
         </div>
-    )
-}
+    );
+} 
 
 export default Product;
