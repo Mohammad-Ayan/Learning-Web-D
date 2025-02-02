@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
-import Lottery from './lottery'
+
+import Lottery from './Lottery'
 
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
 
   return (
     <>
-     <Lottery />
+    <Lottery n={5} winningSum = {25}/>
+    
     </>
   )
 }
