@@ -20,7 +20,7 @@ module.exports.mul = (a, b) => a * b;
 module.exports.g = 9.8;
 module.exports.PI = 3.14;
 
-//we can only write expots also whwn there is obj with fun and properties
+//we can only write expots also when there is obj with fun and properties
 
 //-----------Export in Directories(using module and require)----------
 

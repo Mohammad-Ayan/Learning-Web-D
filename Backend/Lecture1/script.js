@@ -10,6 +10,6 @@
 
 const info = require("./Fruits");    
 
-console.log(info);
+console.log(info[0].name);
 
 // require will search only index.js(perform all the in it) and fetch it 
