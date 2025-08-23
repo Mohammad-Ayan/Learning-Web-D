@@ -88,16 +88,16 @@ app.patch("/user/:id", (req, res) => {
         connection.query(q, [data], (err, result) => {
             if (err) throw err;
             let user = result[0];
-            if(formPass != user.password){
+            if (formPass != user.password) {
                 res.send("Password Incorrect");
-            }else{
-            let q2 = `UPDATE user SET username = '${newUsername}' WHERE id = '${id}'`; 
-            connection.query(updateQ, (err, result) => {
-                if (err) throw err;
-                res.redirect("/user");
-            })
+            } else {
+                let q2 = `UPDATE user SET username = '${newUsername}' WHERE id = '${id}'`;
+                connection.query(updateQ, (err, result) => {
+                    if (err) throw err;
+                    res.redirect("/user");
+                })
             }
-           
+
         });
     } catch (err) {
         console.error(err);
@@ -127,13 +127,24 @@ app.post('/user', (req, res) => {
 // Delete Route
 app.delete('/user/:id', (req, res) => {
     let { id } = req.params;
-    let q = `DELETE FROM user WHERE id = '${id}'`;
+    let { password: formPass } = req.body;
+    let q = `SELECT * FROM user WHERE id = '${id}'`;
 
     try {
         connection.query(q, (err, result) => {
             if (err) throw err;
-            console.log(result);
-            res.redirect('/user');
+
+            let user = result[0];
+
+            if (formPass != user.password) {
+                res.send("Password Incorrect");
+            } else {
+                let q2 = `DELETE FROM user WHERE id = '${id}'`;
+                connection.query(q2, (err, updateResult) => {
+                    if (err) throw err;
+                    res.redirect('/user');
+                });
+            }
         });
 
     } catch (err) {
