@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@faker-js/faker": "^9.9.0",
     "figlet": "^1.8.0",
     "uuid": "^10.0.0"
   }
